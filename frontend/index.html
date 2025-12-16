@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- this is the landing page -->
+        <meta charset="utf-8">
+        <title>ReAble</title>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <!-- Description for SEO -->
+        <meta name="description" content="ReAble is an inclusive job platform connecting abled talent with employers who care about accessibility a nd diversity">
+
+        <!-- Link to CSS -->
+         <link rel="stylesheet" href="./Style/styles.css">
+    </head>
+
+    <body>
+        <!-- here should be a main content page //todo -->
+         <a href="#main-content" class="skip-link">Skip to main content</a>
+         <header class="site-header">
+            <!-- the header will have the navigation bar -->
+             <nav class="navbar" aria-label="Main navigation">
+                <div class="logo-area">
+                    <span class="logo-text">
+                        ReAble
+                    </span>
+                </div>
+
+                <!-- this is the mobile menu button = -->
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+                    <span class="sr-only">Toggle navigation</span>
+                    ☰
+                </button>
+                
+                <!-- now is the unordered list of the pages links -->
+                 <ul id="nav-links" class="nav-links">
+                    <li><a href="#how-it-works">How it works</a></li>
+                    <li><a href="#for-job-seeker">Job Seekers</a></li>
+                    <li><a href="#for-employers">Employers</a></li>
+                    <li><a href="#accessibility">Accessibility</a></li>
+                 </ul>
+
+                <div class="nav-auth">
+                    <a href="./login.html" class="btn btn-outline">Log in</a>
+                    <a href="./signup.html" class="btn btn-primary">Sign up</a>
+                </div>
+             </nav>
+         </header>
+        <main id="main-content">
+        <!-- hero section -->
+         <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-text">
+                <h1 id="hero-heading">Job opportunities for every ability.</h1>
+                <p>
+                    ReAble connects differently abled professionals with inclusive employers who value skills over stereotypes.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary">Get started as a  Job Seeker</button>
+                    <button class="btn btn-secondary">Post a job as an Employer</button>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <!-- add an image here -->
+                 <p>Find your first role with ReAble!!</p>
+            </div>
+         </section>
+
+         <!-- how it works -->
+          <section id="how-it-works" class="section">
+            <h2>How ReAble works</h2>
+            <div class="grid-3">
+                <article class="card">
+                    <h3>Create your accessible profile</h3>
+                    <p>Highlight your skills, preferred work style, and accessibility needs clearly.</p>
+                </article>
+                <article class="card">
+                    <h3>Discover inclusive jobs</h3>
+                    <p>Search rooles from companies that commit to accessibility and ezual opportunities</p>
+                </article>
+                <article class="card">
+                    <h3>Connect and Grow</h3>
+                    <p>Message recruiters, build your network, and track your applications.</p>
+                </article>
+            </div>
+          </section>
+
+          <!-- For Job Seekers -->
+           <section id="for-job-seekers" class="section section-alt">
+            <h2>For Job Seekers</h2>
+            <ul class="feature-list">
+                <li>Filter jobs by remote, hybrid, or on-site with accessiblity info.</li>
+                <li>Indicate assistive techonlogies you use and required accommodations</li>
+                <li>Build a profile that focuses ono your skills, not your limitations</li>
+            </ul>
+           </section>
+
+           <!-- For the employers -->
+            <section id="for-employers" class="section section-alt">
+                <h2>For Employers</h2>
+                <ul class="feature-list">
+                    <li>Reach a diverse talent pool of differently abled professiionals.</li>
+                    <li>Showcase your company's accessibility practices and policies.</li>
+                    <li>Get syggestions to make job posts more inclusive.</li>
+                </ul>
+                </div>
+            </section>
+
+            <!-- Accessibility statement -->
+             <section id="accessibility" class="section-alt">
+                <h2>Accessibility First</h2>
+                <p>
+                    ReAble is being built with accessibility from day one: proper landmarks, keyboard navigations,
+                    screen  reader-friendly labels, and high contrast modes. We're continuously imporving based
+                    on feedback from our users.
+                </p><button class="btn btn-outline" type="button">Share accessibility feedback</button>
+             </section>
+        </main>
+        <footer class="site-footer">
+            <p>© <span id="year"></span>ReAble. Built for inclusivity.</p>
+        </footer>
+
+        <!--  TOLink the javaScript code -->
+          <script src="./Script/app.js"></script>
+    </body>
+</html>
