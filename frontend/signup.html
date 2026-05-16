@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SignUp - ReAble</title>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Sign up for ReAble to find inclusive job opportunities or manage your job postings"> 
+        <!-- Reuse the same css -->
+         <link rel="stylesheet" href="./Style/styles.css">
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">Skip to m ain content</a>
+        <!-- simple header -->
+    </body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="logo-area">
+                <a href="./index.html" class="logo-link">
+                    <span class="logo-text">ReAble</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main id="main-content" class="auth-page">
+        <section class="auth-card" aria-labelledby="signup-heading">
+            <h1 id="signup-heading">Welcome to ReAble</h1>
+            <p class="auth-subtitle">
+               Sign up to start your journey with ReAble.
+            </p>
+            <form id="signupForm" class="auth-form" method="post">
+                <!-- email -->
+                 <div class="form-group">
+                    <label for="first name">First Name</label>
+                    <input type="text" id="firstName" name="fname" required placeholder="enter your name">
+                    <label for="last name">Last Name</label>
+                    <input type="text" id="lastName" name="lname">
+                    <label for="email">Email</label>
+                    <input 
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                    >
+                 </div>
+                <!-- password -->
+                 <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required 
+                    minlength="6" placeholder="Enter your password">
+                    <!--confirm password-->
+                    <label for="confirm password">Confirm password</label>
+                    <input type="password" name="confirm password" id="confirmPassword" required>
+                 </div>
+                 <!-- remember + forgot -->
+                  <div class="form-row">
+                    <label for="checkbox-label">
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
+                    </label>
+                    
+                    <a href="#" class="text-link">Forgot password?</a>
+                  </div>
+                  <!-- submit -->
+                   <button type="submit" class="btn btn-primary auth-submit" onclick="signup()">Sign Up</button>
+                   <!-- small divider -->
+                    <p class="auth-alt">Already have an account?
+                    <a href="./login.html" class="text-link"> Login</a>
+                    </p>
+            </form>
+        </section>
+    </main>
+    <footer  class="site-footer">
+        <p>
+            © <span id="year"></span> ReAble. Built for inclusivity.
+        </p>
+    </footer>
+    <script src="./Script/app.js"></script>
+</html>
